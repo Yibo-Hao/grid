@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+/*以上为css reset*/
+h3 {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: auto 150px auto;
+  grid-template-rows: 45px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+h3 > div {
+  font-size: 26px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+/*以上为h3*/
+.container {
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+  grid-template-rows: 180px 180px 180px 180px;
+  grid-template-areas:
+    "big-1 big-2 small-1 small-2"
+    "big-1 big-2 small-3 small-4"
+    "small-5 small-6 small-7 small-8"
+    "small-9 small-10 small-11 small-12";
+  grid-gap: 10px 10px;
+  justify-content: start;
+  width: 1000px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container > .bigimages1 {
+  grid-area: big-1;
+  background: black;
+}
+.container > .bigimages2 {
+  grid-area: big-2;
+  background: black;
+}
+.container > .images1 {
+  grid-area: small-1;
+  background: black;
+}
+.container > .images2 {
+  grid-area: small-2;
+  background: black;
+}
+.container > .images3 {
+  grid-area: small-3;
+  background: black;
+}
+.container > .images4 {
+  grid-area: small-4;
+  background: black;
+}
+.container > .images5 {
+  grid-area: small-5;
+  background: black;
+}
+.container > .images6 {
+  grid-area: small-6;
+  background: black;
+}
+.container > .images7 {
+  grid-area: small-7;
+  background: black;
+}
+.container > .images8 {
+  grid-area: small-8;
+  background: black;
+}
+.container > .images9 {
+  grid-area: small-9;
+  background: black;
+}
+.container > .images10 {
+  grid-area: small-10;
+  background: black;
+}
+.container > .images11 {
+  grid-area: small-11;
+  background: black;
+}
+.container > .images12 {
+  grid-area: small-12;
+  background: black;
+}
+img{
+    vertical-align: middle;
+}
